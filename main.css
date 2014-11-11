@@ -1,0 +1,53 @@
+body {
+    background-color: #222222;
+}
+
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    color: #cccccc;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    color: #cccccc;
+    text-align: left;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+a:link {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cccccc;
+}
+
+a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav {
+    display: inline-block;
+    font-family: 'Oxygen', sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+li.active {
+    text-decoration: underline
+}
