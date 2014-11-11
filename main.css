@@ -49,5 +49,6 @@ li {
 }
 
 li.active {
-    text-decoration: underline
+    color: #ffffff;
+    text-decoration: underline;
 }
