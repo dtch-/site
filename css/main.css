@@ -32,6 +32,18 @@ p {
     padding: 0;
 }
 
+.ul {
+    text-decoration: underline;
+}
+
+.it {
+    font-style: italic;
+}
+
+.bd {
+    font-weight: bold;
+}
+
 strong {
     color: #FFF;
     font-weight: 700;
