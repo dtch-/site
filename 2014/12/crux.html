@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>/dev/dtch</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/css/monokai.css" />
+            <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+            </script>
+        <meta name=viewport content="width=device-width, initial-scale=1" charset="utf-8">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <header>
+                <h1>/dev/dtch</h1>
+                <p>*nix through the eyes of a user</p>
+                <ul>
+                    <li> <a href="/index.html">Home</a></li>
+                    <li>//</li>
+                    <li> <a href="/about.html">About</a></li>
+                    <li>//</li>
+                    <li> <a href="/code.html">Code</a></li>
+                    <li>//</li>
+                    <li> <a href="http://github.com/dtch-/">Github</a></li>
+                    <li>//</li>
+                </ul>
+            </header>
+<hr style="clear: both; visibility: hidden;" />
+<!-- Edit Below Here -->
+    <div class="content">
+        <h3>Crux as a daily driver</h3>
+            <p><a href="http://crux.nu/">Crux</a> is a source-based linux distro. All utilities must be compiled, including the kernel. 
+            While it may seem daunting for someone who's unfamiliar with the process, it's actually quite simple. The general crux workflow 
+            is as follows:
+            <ol>
+                <li>Install package(pkg) x</li>
+                <li>Pkg x isn't ported</li>
+                <li>Create a port</li>
+                <li>Run the program</li>
+                <li>refer to step 1</li>
+            </ol>
+            Creating a port is fairly simple if you have the proper utilities. Z3bra has created <a href="http://git.z3bra.org/cgit.cgi/scripts/tree/prtmk">`prtmk`</a> 
+            for use within crux. You can view it in action <a href="http://blog.z3bra.org/img/2014-05-26-prtutils.gif">here</a>. As well, 
+            <a href="http://sprunge.us/JGIM/">here</a> is the pkgfile template needed for use with prtmk.</p>
+
+            <p class="it">Why use crux?</p>
+                <p>I used crux for a little over a week before being upset with it. First, let me just say that I absolutely understand the usability and need for a 
+                source-based distro. Crux is simple to use, powerful in the right hands, and raw.  You make crux with your bare hands.</p>
+                <p>That being said, I had problems with crux. Mainly due to some packages not wanting to work, even though they work perfectly on Arch. For example, 
+                alsa-utils and mpd. MPD would not start, spewing errors of missing config files despite them being there. Alsa would simply state that there was no 
+                such file or directory when running `alsamixer`, which I found no fix for. Personally, the bad outweighed the good in crux for me.</p>
+            <p class="it">My experience</p>
+                <p>As I said, the bad outweighed the good. I ultimately retired back to Arch. However, as I used crux I found new respect for source-based distros. 
+                Using `prtmk` and `prt-get` felt good, natural, as though it was how a distro was meant to be. If I had an extra computer lying about, or just more 
+                time in my day, I would definitely install crux again and try to get it working right.</p>
+            <p class="it">Just try it</p>
+                <p>Don't simply take my word. If you enjoy distro-hopping and messing with everything, install crux on a secondary computer or in a VM. It's really 
+                a great distro. There is a handbook that literally walks you through the entire process of getting and burning the ISO to compiling the kernel and 
+                nearly gets you to X.</p>
+            <p class="it">In closing</p>
+                <p>I would give crux a 7/10 (whereas Arch receives 8/10) simply due to the problems I've had with it. If I'd had no problems, it would definitely 
+                be a 9/10 for me. If you enjoy source-based distros, or want to be a programmer (and want a matching distro), give it a shot. Just make sure to 
+                get the new kernel, as crux 3.1 (current version as of writing) ships with 3.12.24 and the latest is 3.17.6 (stable).</p>
+<!-- Edit Above Here -->
+    </div>
+        </main>
+    </div>
+<footer>
+<p>&copy; <time>2014</time> Russell Lee / dtch</p>
+<p><a href="http://github.com/dtch-/site">Source</a></p>
+</footer>
+</body>
+</html>
