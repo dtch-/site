@@ -1,0 +1,295 @@
+/* vim: set ai sw=4 ts=4 fdm=marker: */
+
+/*
+ * COLORS DEFINITION:
+ *      - background -- #222
+ *      - def. text  -- #aaa
+ *      - code (bg)  -- #111
+ *      - code (fg)  -- #fff
+ *      - borders    -- #111
+ *      - link plain -- #fff
+ *      - link visit -- #aaa
+ *      - link hover -- #cf1
+ *      - main title -- #aaa
+ *      - bold text  -- #cf1
+ *      - sub titles -- #eee
+ *      - blockquote -- #666
+ *
+ */
+
+/* Font definitions {{{ */
+@font-face {
+    font-family: archivo;
+    src: url(/css/fonts/archivo.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * @font-face {
+ *     font-family: district;
+ *     src: url(/css/fonts/district.otf);
+ *     font-weight: normal;
+ *     font-style: normal;
+ * }
+ */
+
+/* }}} */
+
+/* Main blocks style {{{ */
+body {
+    /* background: #222 url(/css/img/pattern.jpg) repeat left top; */
+    background: #222;
+    color: #aaa;
+    padding: 0;
+    margin: 0;
+    /* font-family: district, sans-serif; */
+}
+
+#wrapper {
+    width:90%;
+    max-width:720px;
+    padding: 10px;
+    margin:auto;
+    margin-top: 28px;
+    /* background-color: rgba(32, 32, 32, 0.4); */
+    border-radius: 16px;
+}
+
+hr {
+    width: 40%;
+    height: 1px;
+    background-color:#aaa;
+    margin-left: 0;
+    margin-top: 32px;
+    border:none;
+    /* border: 1px solid #fff; */
+}
+
+header {
+    /* background-color: #fff; */
+    width:90%;
+    margin:auto;
+    max-width:720px;
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+}
+
+footer {
+    color: #aaa;
+    font-size:90%;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    max-width: 720px;
+    border-top:1px solid #aaa;
+    padding: 10px;
+}
+
+footer a {
+    color: #aaa;
+}
+
+p {
+    /* padding-left: 20px; */
+}
+
+#blank {
+    height: 100%;
+    padding:10px;
+}
+/* }}} */
+
+/* Titles and headers {{{ */
+h1, h2, h3, h4, h5, h6 {
+    color: #aaa;
+    font-family: archivo, sans-serif;
+}
+
+h1 a, h3 {
+    color: #eee;
+    /* text-shadow: 2px 2px 4px #fff; */
+}
+
+h1 { display:inline; }
+
+h2 {
+    color: #666;
+    display: inline;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+h3 {
+    text-align:right;
+    font-size:150%;
+    border-bottom: 1px solid #eee;
+    padding-right: 16px;
+}
+
+h4 { font-size:120%; }
+
+header h1 {
+    font-size: 200%;
+    font-style: italic;
+    margin-right: 8px;
+}
+
+/* }}} */
+
+/* Pretty links {{{ */
+a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* shamelessly copied for http://ratox.2f30.org, because woah, neat ! */
+p  a:before, p  a:after { color: #cf1; content: ":"; }
+ul a:before, ul a:after { color: #cf1; content: ":"; }
+ol a:before, ol a:after { color: #cf1; content: ":"; }
+
+a:hover {
+    color: #cf1;
+    /* text-decoration: underline; */
+}
+
+a:visited {
+    text-decoration: line-through;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: none;
+}
+
+header h1 a {
+    color: white;
+    text-shadow: 0px 0px 2px #111;
+}
+
+header h1 a:hover {
+    color: white;
+    text-shadow: 0px 0px 8px #cf1;
+}
+/* }}} */
+
+/* Tables {{{ */
+table {
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+table td, table th {
+    padding:4px;
+}
+
+td {
+    border: 1px solid #111;
+}
+
+th {
+    background-color: #111;
+    color: #fff;
+    font-weight: normal;
+}
+/* }}} */
+
+/* Coding style (<code>) {{{ */
+code {
+
+    background-color: #111;
+    color: inherit;
+    padding: 2px;
+}
+
+pre code {
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
+    border-radius: 2px;
+}
+
+pre {
+    margin:auto;
+    color: #fff;
+    background-color: #111;
+    border-radius: 2px;
+    margin-top: 4px;
+    padding: 6px;
+    max-height:200px;
+    overflow:auto;
+}
+
+/* }}} */
+
+/* Text Formatting {{{ */
+strong {
+    color: #cf1;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+blockquote, q {
+    color: #666;
+    font-style: italic;
+}
+
+blockquote {
+    border-left: 8px solid #cf1;
+    padding-left: 8px;
+    margin-left: -8px;
+}
+
+.center { text-align: center; }
+
+strike { text-decoration: line-through; }
+
+.smiley {
+    font-style: normal;
+    font-family: sans-serif;
+    font-size: 80%;
+    padding-left:2px;
+    padding-right:2px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    transform: rotate(90deg);
+}
+
+/* }}} */
+
+/* Images and associated text {{{ */
+
+img {
+    width:30%;
+    vertical-align: top;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 4px;
+    margin:auto;
+    margin-top: 8px;
+}
+
+video { width: 100%; }
+
+/* Comment images - use with <span> or <div> */
+.caption {
+    width: 60%;
+    display: inline-block;
+    font-style: italic;
+    font-size: 80%;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.caption-large {
+    width: 100%;
+    display: block;
+    font-style: italic;
+    font-size: 80%;
+}
+/* }}} */
+
